@@ -8,8 +8,9 @@ def register():
         name = request.form.get('name')
         email = request.form.get('email')
         password = request.form.get('password')
+        mobile=request.form.get('number')
         return render_template('success.html', name=name)
     return render_template('register.html')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.1', port=80)
+    app.run(host='0.0.0.0', port=80)
