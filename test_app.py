@@ -17,7 +17,8 @@ class AppTestCase(unittest.TestCase):
             name='Test User',
             email='test@example.com',
             password='password'
-        ))
+            
+       ))
         self.assertEqual(response.status_code, 200)
         self.assertIn(b'Success', response.data)
 
